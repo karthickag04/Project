@@ -2,6 +2,76 @@
 
 using namespace std;
 
+// bass class
+class cars{
+public :
+    string brand="NISSAN";
+
+    void MessaggePrint(){
+    cout << "welcome to Nissan" ;
+    }
+
+};
+
+class cartype{
+
+public:
+    string cartypename="Nissan SUV";
+    void MessaggePrintfor(){
+    cout << "welcome to Nissan SUV" ;
+    }
+
+};
+
+//derived class
+class nissanSUV : public cars, public cartype{
+
+
+};
+
+
+int main(){
+
+    nissanSUV ns;
+    cout << ns.brand;
+    cout << ns.cartypename;
+    ns.MessaggePrint();
+    ns.MessaggePrintfor();
+
+
+    return 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+#include <iostream>
+
+using namespace std;
+
 class salaryprint{
 private:
     int salary;
@@ -42,6 +112,10 @@ int main(){
     return 0;
 
 }
+
+
+*/
+
 
 
 
