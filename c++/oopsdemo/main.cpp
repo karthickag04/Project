@@ -38,8 +38,8 @@ int main()
   fflush(stdin);
   string fullname;
   cin>> fullname;
-    cout << fullname.length()<< endl;
-        cout << fullname.size() <<endl;
+  fullname.insert(4," ag ");
+  cout << fullname;
 
 
 
