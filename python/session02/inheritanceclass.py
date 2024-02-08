@@ -1,4 +1,4 @@
-class grandparents:
+class gp:
     def __init__(self,grandpaname, grandmaname, familyname) :
         self.grandfathername=grandpaname
         self.grandmothername=grandmaname
