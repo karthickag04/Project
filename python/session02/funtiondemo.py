@@ -1,42 +1,42 @@
-def myname():
-    name1 = "karthick"
-    year = 2024
+# #addressing space issue --> use  tab key in keyboard
+# def myname():
+#     print("this is kathick ag")
+#     print("welcome")
+#     name="karthick1"
+#     lname="AG"
+#     if name=="karthick":
+#         print ("yes you are karthick")
+#         print("welcome")
+#     print("skipped above if due to name mismatch")   
+#     for x in name:
+#         print(x)  
+# myname()
 
-    #printing values
-    print("Hi..!  " , name1)
-    print("Hi..!  " , name1, " welcome to the year of ", year)
+#use of function
+# to reuse the function again and again
+def myname1():
+    print("I am karthick AG")
+myname1()
+myname1()
+myname1()
 
-    # casting values
-    print("Hi..!  " + name1)
-    print("Hi..!  " + name1 + " welcome to the year of " + str(year))
 
-myname()
-     
 
-class grandparents:
-    def __init__(self, grandmaname, grandpaname, familyname) :
-        self.grandmaname=grandmaname
-        self.grandpaname=grandpaname
-        self.familyname=familyname
-    def welcome(self):
-        print("welcome to ", self.familyname, " family..! wishes from ", self.grandmaname, " and ", self.grandpaname)
+def myname2():
+    name="karthick"
+    lname="AG"
+    year=2024
+    # printing value as it is.
+    print("hi..!" , name)
+    print("hi..!" , name , lname)
+    print("hi..!" , name , lname , "welcome to year of ", year)
 
-# x = grandparents("seetha","ram","ramayanam")
-# x.welcome()
-
-class parents(grandparents):
-    def __init__(self, mothername, fathername, grandmaname, grandpaname, familyname):
-        self.mothername=mothername
-        self.fathername=fathername
-        super().__init__(grandmaname, grandpaname, familyname)
-        
-        
+    # printing value using concatenation
+    print("--------")
+    print("printing value using concatenation")
+    print("hi..!" + name)
+    print("hi..!" + name + " " + lname)
+    print("hi..!" + name + " " + lname + "welcome to year of " + str(year))
     
-    def thanks(self):
-        print ("Hi ..! " , self.grandmaname, "and ", self.grandpaname , " We ", self.mothername, " and ", self.fathername ," both thank you for your warm welcome to our ", self.familyname, " family ")
 
-x = grandparents("seetha","ram","ramayanam")
-x.welcome()
-y =parents("ganesh","murugan","seetha","ram","ramayanam")
-y.thanks()
-
+myname2()
