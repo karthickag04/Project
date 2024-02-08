@@ -1,4 +1,7 @@
 #include <iostream>
+#include <algorithm>
+#include <unordered_map>
+
 
 using namespace std;
 
@@ -33,7 +36,7 @@ int main()
 
   cout << firstname +" "+ lastname << endl ;
 
-  */
+
 
   fflush(stdin);
   string fullname;
@@ -42,6 +45,29 @@ int main()
   cout << fullname;
 
 
+  */
+
+    char c;
+    cin >> c;
+    switch(c)
+    {
+        case 'a':
+            // ...
+            cout << "a";
+            break;
+
+        case 'b':
+
+            cout << "a";// ...
+            break;
+
+        case 'c':
+            cout << "a";
+            break;
+        default:
+            // ...
+            break;
+    }
 
     return 0;
 }
