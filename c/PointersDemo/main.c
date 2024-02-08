@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
-{
-    int a=10, b=20;
+int pointerdemo(){
+ int a=10, b=20;
     printf("value of a      : %d \t\n", a);
     printf("Address of a    : %d \n", &a);
     printf("-----------\n");
@@ -32,5 +31,32 @@ int main()
     printf("address of s                                                                : %d \t\n", &s);
     printf("value stored  in the address of s in the address of r to the address of q in the address of p    : %d \t\n", *(int*)s);
 
+}
+int main(void)
+{
+
+
+    // declare variables
+    int a=10;
+    float b;
+    char c;
+    char cs[10]="karthick";
+
+    //Declare and Initialize pointers
+    int *ptr_a = &a;
+    float *ptr_b = &b;
+    char *ptr_c = &c;
+    char *ptr_cs = &cs;
+    char **ptr_css = &ptr_cs;
+
+    //Printing address by using pointers
+    printf("Address of a: %d\n",  *ptr_a);
+    printf("Address of b: %p\n",   ptr_b);
+    printf("Address of c: %p\n",   ptr_c);
+    printf("Address of cs: %s\n",  ptr_cs);
+    printf("Address of cs: %s\n", *ptr_css);
+
+
     return 0;
+
 }
