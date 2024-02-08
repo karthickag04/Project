@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 class gp:
-=======
-class parents:
->>>>>>> 3b690c47e8dad1fe39df236171af658df8b8883f
+
     def __init__(self,grandpaname, grandmaname, familyname) :
         self.grandfathername=grandpaname
         self.grandmothername=grandmaname
