@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 class grandparents:
+=======
+class gp:
+>>>>>>> f0c93050a853849a4cca9630f245a4e7c97e53aa
 
     def __init__(self,grandpaname, grandmaname, familyname) :
         self.grandfathername=grandpaname
